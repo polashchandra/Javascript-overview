@@ -12,3 +12,11 @@ const matribandar=function(){
 const namematribandar=function matribandar(){
     console.log("sweety")
 }
+// arrow function
+const hello=()=>{
+    return{
+        a:5,
+        b:6
+    }
+})
+console.log(hello())
