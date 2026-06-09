@@ -34,3 +34,14 @@ console.log(null && "hello")
  api fetch("https://jsonplaceholder.typicode.com/posts")
  .then(res=>res.json())
 .then(data=>console.log(data))
+async function getData() {
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/todos/1"
+    );
+
+    const data = await response.json();
+  } catch (err) {
+    console.log(err);
+  }
+}
