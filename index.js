@@ -30,3 +30,7 @@ funciton hello(){
 console.log(null ?? "hello")
 console.log(undefined  || "hello")
 console.log(null && "hello")
+
+ api fetch("https://jsonplaceholder.typicode.com/posts")
+ .then(res=>res.json())
+.then(data=>console.log(data))
